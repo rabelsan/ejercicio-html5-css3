@@ -77,6 +77,11 @@
   margin-right: 5px;
 }
 
+.navbar-item > #search-textbox {
+  font-size: 18px;
+}
+
+
 #search-form > .search-button {
   text-decoration: none;
   border-style: none;

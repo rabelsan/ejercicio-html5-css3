@@ -55,30 +55,45 @@
     <main>
         <section id="main-login" class="main-login">
             <aside id="advantages" class="advantages">
-                <ul id="list-advantages" class="list-advantages">
-                    <li class="ad1">¡3 semanas gratis!</li>
-                    <li class="ad2">Después solo 5,99€/mes.</li>
-                    <li class="ad1">Sin permanecia</li>
-                    <li class="ad2">Cancela cuando quieras.</li>
-                    <li class="ad1">Más de mil títulos</li>
-                    <li class="ad2">Nuevos títulos todos los meses.</li>
-                    <li class="ad1">Hasta 3 usuarios</li>
-                    <li class="ad2">Con plan básico.</li>
-                </ul>
+                <div class="advantages">
+                    <ul id="list-advantages" class="list-advantages">
+                        <li class="ad1">¡3 semanas gratis!</li>
+                        <li class="ad2">Después solo 5,99€/mes.</li>
+                        <li class="ad1">Sin permanecia</li>
+                        <li class="ad2">Cancela cuando quieras.</li>
+                        <li class="ad1">Más de mil títulos</li>
+                        <li class="ad2">Nuevos títulos todos los meses.</li>
+                        <li class="ad1">Hasta 3 usuarios</li>
+                        <li class="ad2">Con plan básico.</li>
+                    </ul>
+                </div>
             </aside>
             <article id="login" class="login">
-                <h2>Correo electrónico</h2>
-                <input type="email" id="email" class="email" required /><br />
-                <h2>Contraseña (Mínimo 5 caracteres)</h2>
-                <input type="password" class="pwd" min=5 required /><br />
-                <a href="./rememberpwd.html">¿Has olvidado tu contraseña?</a>
-                <p id="conditions" class="conditions">
-                    Al hacer clic en ACEPTAR Y CONTINUAR,
-                    acepto los <u>TERMINOS Y CONDICIONES</u>
-                    y confirmo que he leído y que entiendo
-                    la <u>POLÍTICA DE DATOS</u>.
-                </p>
-                <input type="submit" id="accept" value="ACEPTAR Y CONTINUAR"></button>
+                <form name="login-form" id="login-form" action="./cartelera.html" method="get">
+                    <div class="login-data">
+                        <p>
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required />
+                        </p>
+
+                        <p>
+                            <label for="pass-word">Contraseña (Mínimo 5 caracteres)</label>
+                            <input type="text" id="asunto" name="asunto" min=5 required />
+                        </p>
+                        <p>
+                            <a href="./error404.html">¿Has olvidado tu contraseña?</a>
+                        </p>
+                        <p id="conditions" class="conditions">
+                            Al hacer clic en ACEPTAR Y CONTINUAR,
+                            acepto los <u>TERMINOS Y CONDICIONES</u>
+                            y confirmo que he leído y que entiendo
+                            la <u>POLÍTICA DE DATOS</u>.
+                        </p>
+                    </div>
+                    <p class="sign-in">
+                        <input type="submit" value="Enviar" />
+                    </p>
+                </form>
                 </aritcle>
         </section>
     </main>

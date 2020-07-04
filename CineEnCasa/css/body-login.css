@@ -1,76 +1,77 @@
 body {
-    background: url('../img/bg-cinema.jpg');
-    font-family: Roboto-Regular;
+    background: url('../img/bg-cinema.jpg'), black;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: top center;
-    color: lightgray;
-    padding: 0;
-    margin: 0;
 }
 
 .main-login {
     display: grid;
-    grid-template-columns : repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: minmax(60px, auto-fit); 
-    grid-gap: 10px; 
-/*     display: flex;
-    flex: 0 0 auto;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
- */    
-    margin: 5%;
-    padding: 2%;
+    grid-template-columns : repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: autot;
+    column-gap: 5px; 
+    padding: 5em 1.5em;
 }
 
 .advantages {
-    background-color: rgba(255,255,255,.9);
-}
-
-
-.list-advantages {
-    list-style: none;
-    list-style-image: url('../img/film-list.gif'); 
-}
-
-.ad1 {
-    font-family: Roboto-Bold;
-    font-size: 200%;
-    font-weight: 900;
-    margin-left: 5%;
-    color: lightyellow;
-}
-
-.ad2 {
-    list-style: none;
-    font-family: Roboto-Light;
-    font-size: large;
-    font-size: 700;
-    color: lightgray;
-    margin-left: 5%;
+    background-color: rgba(242, 245, 102, 0.7);
 }
 
 .login {
-    background-color: rgba(2, 2, 17, 0.9);
-    font-weight: 900;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    color: white;
+    background-color: rgba(242, 245, 102, 0.7);
 }
 
-.email {
-    font-size: 1em;
-    size: 40;
+.sign-in {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.pwd {
-    font-size: 1em;
-    size: 20;
+form label {
+    display: block;
+    font-family: Roboto-Regular;
+}
+
+form input[type='text'],
+form input[type='email'] {
+    width: 95%;
+    font-size: 1.1rem;
+}
+  
+input[type='submit'] {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    min-width: 10rem;
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(to right, rgb(235, 105, 105), rgb(231, 57, 57), rgb(226, 14, 14));
+  }
+  
+.list-advantages > .ad1 {
+    justify-content: center;     
+    font-family: Roboto-Bold;
+    /* list-style: none; */
+    list-style-image: url('../img/film-list.gif'); 
+    padding: 1px 1px;
+}
+
+.list-advantages > .ad2 {
+    font-family: Roboto-Thin;
+    list-style: none;
+}
+
+.login-data p {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+
+.login-data a {
+    text-decoration: none;
+    color: gray;
 }
 
 @media (min-width: 768px) {
+
 
 }
 

@@ -56,6 +56,11 @@ h1 {
     padding-left: 40px; 
 }
 
+.message404 b {
+    font-family: Roboto-Regular; 
+    font-size: 1.2em;
+}
+
 @media (min-width: 768px) {
 
     body {
@@ -64,6 +69,11 @@ h1 {
 
     .error404 {
         flex-direction: row;
+    }
+    
+    .message404 b {
+         font-family: Roboto-Black; 
+         font-size: 3em;
     }
 
     .image404 {
