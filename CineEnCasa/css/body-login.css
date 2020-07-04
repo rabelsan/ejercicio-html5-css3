@@ -1,10 +1,8 @@
 body {
-    background: url('../img/bg-cinema.jpg'), black;
+    background: url('../img/bg-cinema.jpg');
     background-size: cover; 
-    background-repeat: no-repeat;
-    /* background-position: top center; */
- /*    min-width: 40px;
-    min-height: 400px; */
+    background-repeat: no-repeat; 
+    background-position: top center; 
 }
 
 .main-login {
