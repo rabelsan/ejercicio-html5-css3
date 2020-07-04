@@ -1,3 +1,7 @@
+* {
+    font-family: Roboto-Regular, Arial, Helvetica, Times, Sans-Serif; 
+}
+
 :root {
     --max-width: 900px;
     --navbar-height: 55px;
@@ -28,12 +32,9 @@
     src: url('../fonts/Roboto-Black.ttf');
 }
 
-* {
-    font-family: Roboto-Regular, Arial, Helvetica, Times, Sans-Serif; 
-}
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 .main {

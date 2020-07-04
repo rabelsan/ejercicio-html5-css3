@@ -2,9 +2,9 @@ body {
     background: url('../img/bg-cinema.jpg'), black;
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: top center;
-    min-width: 40px;
-    min-height: 400px;
+    /* background-position: top center; */
+ /*    min-width: 40px;
+    min-height: 400px; */
 }
 
 .main-login {
@@ -16,7 +16,7 @@ body {
 }
 
 .advantages, .login {
-    background-color: rgba(223, 235, 57, 0.7);
+    background-color: rgba(212, 221, 85, 0.7);
     border-radius: 10px;
 }
 
