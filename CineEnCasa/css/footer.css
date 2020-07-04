@@ -1,0 +1,21 @@
+ 
+.footer {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    height: calc(var(--navbar-height)*2);
+    background-color: black;
+    color: inherited;
+    font-family: Gotham-light;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer div {
+    font-family: inherit;
+    color: inherited;
+    margin-top: 2px;
+}
+@media (min-width: 768px) {
+
+}

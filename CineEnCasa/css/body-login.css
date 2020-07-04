@@ -1,0 +1,77 @@
+body {
+    background: url('../img/bg-cinema.jpg');
+    font-family: Roboto-Regular;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: lightgray;
+    padding: 0;
+    margin: 0;
+}
+
+.main-login {
+    display: grid;
+    grid-template-columns : repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: minmax(60px, auto-fit); 
+    grid-gap: 10px; 
+/*     display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+ */    
+    margin: 5%;
+    padding: 2%;
+}
+
+.advantages {
+    background-color: rgba(255,255,255,.9);
+}
+
+
+.list-advantages {
+    list-style: none;
+    list-style-image: url('../img/film-list.gif'); 
+}
+
+.ad1 {
+    font-family: Roboto-Bold;
+    font-size: 200%;
+    font-weight: 900;
+    margin-left: 5%;
+    color: lightyellow;
+}
+
+.ad2 {
+    list-style: none;
+    font-family: Roboto-Light;
+    font-size: large;
+    font-size: 700;
+    color: lightgray;
+    margin-left: 5%;
+}
+
+.login {
+    background-color: rgba(2, 2, 17, 0.9);
+    font-weight: 900;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    color: white;
+}
+
+.email {
+    font-size: 1em;
+    size: 40;
+}
+
+.pwd {
+    font-size: 1em;
+    size: 20;
+}
+
+@media (min-width: 768px) {
+
+}
+
+

@@ -1,0 +1,24 @@
+@media screen and (min-width: 320px) {
+    body {
+      /*
+      Here’s the math, credit Mike Riethmuller:
+      font-size: calc([minimum size] +
+      ([maximum size] - [minimum size]) *
+      ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+      */
+      font-size: calc(
+        16px +
+        (20 - 16) *
+        (
+          (100vw - 320px) /
+          (730 - 320)
+        )
+      );
+    }
+  }
+  
+  @media screen and (min-width: 730px) {
+    body {
+      font-size: 18px;
+    }
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEnCasa | Cine sin salir de casa</title>
+    <base href="./index.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/body-login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social.css">
+
+    <!-- <link rel="stylesheet" href="./css/login.css"> -->
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="brand">CineEnCasa</div>
+
+        <input type="checkbox" id="popcorn-checkbox" />
+        <label for="popcorn-checkbox" class="popcorn-icon">
+            <i class="icon-video-camera"></i>
+        </label>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="#novedades">Novedades</a>
+                </div>
+            </li>
+            <li class="navbar-item">
+                <a href="#series">Series</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#peliculas">Películas</a>
+            </li>
+            <li class="navbar-item search">
+                <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
+                <form action="" method="get" target="_self" name="search-form" id="search-form">
+                    <input type="textbox" required name="searchText" id="search-textbox" />
+                    <button for="search-texbox" type="submit" class="search-button">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+            </li>
+            <li class="navbar-item">
+                <a href="http://localhost:3000/">Salir</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+        <section id="main-login" class="main-login">
+            <aside id="advantages" class="advantages">
+                <ul id="list-advantages" class="list-advantages">
+                    <li class="ad1">¡3 semanas gratis!</li>
+                    <li class="ad2">Después solo 5,99€/mes.</li>
+                    <li class="ad1">Sin permanecia</li>
+                    <li class="ad2">Cancela cuando quieras.</li>
+                    <li class="ad1">Más de mil títulos</li>
+                    <li class="ad2">Nuevos títulos todos los meses.</li>
+                    <li class="ad1">Hasta 3 usuarios</li>
+                    <li class="ad2">Con plan básico.</li>
+                </ul>
+            </aside>
+            <article id="login" class="login">
+                <h2>Correo electrónico</h2>
+                <input type="email" id="email" class="email" required /><br />
+                <h2>Contraseña (Mínimo 5 caracteres)</h2>
+                <input type="password" class="pwd" min=5 required /><br />
+                <a href="./rememberpwd.html">¿Has olvidado tu contraseña?</a>
+                <p id="conditions" class="conditions">
+                    Al hacer clic en ACEPTAR Y CONTINUAR,
+                    acepto los <u>TERMINOS Y CONDICIONES</u>
+                    y confirmo que he leído y que entiendo
+                    la <u>POLÍTICA DE DATOS</u>.
+                </p>
+                <input type="submit" id="accept" value="ACEPTAR Y CONTINUAR"></button>
+                </aritcle>
+        </section>
+    </main>
+    <footer class="footer">
+        <aside class="contacto">
+            <div>
+                ¿Tienes dudas? Llama a 809992091.
+            </div>
+            <div>
+                © 2020 CineEnCasa. Todos los derechos reservados.
+            </div>
+        </aside>
+        <aside class="social-network">
+            <ul class="social-list">
+                <li>
+                    <a href="#" target="_blank" rel="noreferrer noopener" class="redk">
+                        <i class="social-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noreferrer noopener" class="social-link">
+                        <i class="social-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </footer>
+</body>
+
+</html>

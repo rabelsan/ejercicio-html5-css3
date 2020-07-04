@@ -1,0 +1,47 @@
+:root {
+    --max-width: 900px;
+    --navbar-height: 55px;
+    --dark-color: rgb(0, 11, 11);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../fonts/Roboto-Black.ttf');
+}
+
+* {
+    font-family: Roboto-Regular, Arial, Helvetica, Times, Sans-Serif; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding: 3rem 1rem;
+  }
+  
