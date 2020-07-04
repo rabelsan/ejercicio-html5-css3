@@ -39,7 +39,7 @@
             </li>
             <li class="navbar-item search">
                 <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
-                <form action="" method="get" target="_self" name="search-form" id="search-form">
+                <form action="./lookup.html" method="get" target="_self" name="search-form" id="search-form">
                     <input type="textbox" required name="searchText" id="search-textbox" />
                     <button for="search-texbox" type="submit" class="search-button">
                         <i class="icon-search"></i>
@@ -69,7 +69,7 @@
                 </div>
             </aside>
             <article id="login" class="login">
-                <form name="login-form" id="login-form" action="./cartelera.html" method="get">
+                <form name="login-form" id="login-form" action="./billboard.html" method="get">
                     <div class="login-data">
                         <p>
                             <label for="email">Correo electrónico</label>
@@ -78,10 +78,10 @@
 
                         <p>
                             <label for="pass-word">Contraseña (Mínimo 5 caracteres)</label>
-                            <input type="text" id="asunto" name="asunto" min=5 required />
+                            <input type="password" id="asunto" name="asunto" min=5 required />
                         </p>
                         <p>
-                            <a href="./error404.html">¿Has olvidado tu contraseña?</a>
+                            <a class="remember" href="./error404.html">¿Has olvidado tu contraseña?</a>
                         </p>
                         <p id="conditions" class="conditions">
                             Al hacer clic en ACEPTAR Y CONTINUAR,

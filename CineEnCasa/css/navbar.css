@@ -73,12 +73,8 @@
   color: var(--dark-color);
 }
 
-.navbar-item > #search-textbox {
-  margin-right: 5px;
-}
-
-.navbar-item > #search-textbox {
-  font-size: 18px;
+.navbar-item #search-textbox {
+  font-size: 1em;
 }
 
 
@@ -121,14 +117,17 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row;
-      font-family: Roboto-Regular;
     }
     
     .navbar-item > a, .search {
         color: var(--dark-color);
         line-height: var(--navbar-height);
-        padding: 0 1rem;
-        font-size: inherit;
+        padding: 0 0.5rem;
+        /* font-size: inherit; */
+    }
+
+    .navbar-item #search-textbox {
+      font-size: 0.7em;
     }
     
     .navbar-item > a:hover {

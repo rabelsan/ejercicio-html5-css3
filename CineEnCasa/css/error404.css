@@ -11,8 +11,6 @@ html {
 body {
     background-color: white;
     color: black;
-    min-width: 400px;
-    min-height: 400px;
     margin-top: 0;
     margin-bottom: calc(100vh*0.1);
     margin-left: calc(100vw*0.05); 
