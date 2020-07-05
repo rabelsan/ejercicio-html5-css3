@@ -1,24 +1,29 @@
 body {
-    background: url('../img/bg-cinema.jpg');
+    background-color: var(--dark-color);
+}
+
+main {
+    /* background: var(--dark-color); */
+    background: url('../img/bg-cinema.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: top center; 
+    background-position: top center;   
 }
 
 .main-login {
     display: grid;
-    grid-template-columns : repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns : repeat(auto-fit, minmax(175px, 1fr));
     grid-template-rows: auto;
+    justify-content: center;
+    align-content: center; 
+    
     column-gap: 5px; 
+    row-gap: 5px;
     padding: 5em 1.5em;
 }
 
-.main-form {
-    max-width: var(--max-width);
-}
-
 .advantages, .login {
-    background-color: rgba(212, 221, 85, 0.7);
+    background-color: rgb(252, 252, 107);
     border-radius: 10px;
 }
 
@@ -36,7 +41,7 @@ form label {
 form input[type='email'],
 form input[type='password'] {
     width: 95%;
-    font-size: 1.1rem;
+    font-size: 1em;
 }
   
 input[type='submit'] {
@@ -47,7 +52,7 @@ input[type='submit'] {
     border: 0;
     background: linear-gradient(to right, rgb(235, 105, 105), rgb(231, 57, 57), rgb(226, 14, 14));
   }
-  
+
 .list-advantages > .ad1 {
     justify-content: center;     
     font-family: Roboto-Black;
@@ -59,6 +64,7 @@ input[type='submit'] {
 
 .list-advantages > .ad2 {
     font-family: Roboto-Regular;
+    font-size: medium;
     list-style: none;
     color: red;
 }
@@ -78,8 +84,15 @@ input[type='submit'] {
     color: red;
 }
 
+.footer {
+    background: var(--dark-color);
+}
+
 @media (min-width: 768px) {
 
+    .main-login, .footer {
+        max-width: var(--max-width);
+    }
 
 }
 
