@@ -5,12 +5,12 @@
 :root {
     --max-width: 940px;
     --navbar-height: 55px;
-    --background-color: linear-gradient(to right, rgb(12, 1, 1), rgb(41, 4, 4), rgb(12, 1, 1));
+    --navbar-color: rgba(211,211,211,0.85);
+    --background-color: linear-gradient(to right,rgb(75, 71, 71),rgb(158, 30, 30),rgb(48, 4, 4));
     --dark-color: rgb(0, 0, 0);
 }
 
 body {
-    /* background: linear-gradient(to right, rgb(12, 1, 1), rgb(41, 4, 4), rgb(12, 1, 1)); */
     overflow-x: hidden; 
 }
 
