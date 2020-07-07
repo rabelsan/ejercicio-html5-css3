@@ -28,11 +28,49 @@ body {
 
 .list {
     display: grid;
-    grid-template-columns: repeat(6,150px);
-    /* overflow-x: scroll; */
+    grid-template-columns: 25px repeat(3,150px) 25px;
+    grid-template-areas: "next film1 film2 film3 prev";
     justify-content: center;
+    align-content: center;
     gap: 5px;
     border: none; 
+    overflow-x: scroll;
+}
+
+#next-lf1 {
+    grid-area: next-icon1;
+}
+
+.film1 {
+    grid-area: film1;
+}
+
+.film2 {
+    grid-area: film2;
+}
+
+.film3 {
+    grid-area: film3;
+}
+
+.film4 {
+    display: none;
+}
+
+.film5 {
+    display: none;
+}
+
+.film6 {
+    display: none;
+}
+
+#prev-lf1 {
+    grid-area: prev-icon1;
+}
+
+.btnext, .btprev {
+    display:none;
 }
 
 .film img {
@@ -40,6 +78,12 @@ body {
     height: 200px;
     background-size: cover;
     background-position: center;
+}
+
+.next i, .prev i {
+    width: var(--navbar-height);
+    height: var(--navbar-height);
+    color: white;
 }
 
 .film .fav-cb {
@@ -75,7 +119,7 @@ body {
     margin-left: 2px;
     background: rgba(255,255,255,0.7);
     color: black;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .film1 .img1:hover + .card1,
@@ -88,6 +132,7 @@ body {
 }
 
 @media (min-width: 768px) {
+   
     .film img {
         width: 175px;
         height: 225px;
@@ -102,7 +147,7 @@ body {
     .film .card {
         top: -125px;
         left: 3px;
-        height: 90px;
+        height: 95px;
         width: 165px;
         font-size: medium;
     }
