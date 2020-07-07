@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/billboard.css">
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar">
+    <nav id="navbar-films" class="navbar">
         <div class="brand">CineEnCasa</div>
 
         <input type="checkbox" id="popcorn-checkbox" />
@@ -32,7 +33,7 @@
                 <a href="#series">Series</a>
             </li>
             <li class="navbar-item">
-                <a href="#peliculas">Películas</a>
+                <a href="http://localhost:3000/billboard.html#navbar-films">Películas</a>
             </li>
             <li class="navbar-item search">
                 <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
@@ -49,93 +50,115 @@
         </ul>
 
     </nav>
-    <main>
+    <header class="tittle">
+        <h1>
+            <span>Películas</span>
+        </h1>
+    </header>
+    <main class="main">
         <section id="carroussel" class="carrousel">
             <article class="outstanding">
 
             </article>
         </section>
-        <section id="listfilms1" class="listfilms1">
+        <section id="listfilms1" class="section listfilms1">
             <div class="list list1">
-                <h1></h1>
-                <article class="film1">
-                    <input type="checkbox" id="fav-cb1" />
+                <div>
+                    <input type="button" id="prev-film1" />
+                    <label for="prev-film1" class="prev-icon1">
+                        <i class="icon-circle-right"></i>
+                </div>
+                <!-- <h1></h1> -->
+                <article class="film film1">
+                    <input type="checkbox" id="fav-cb1" class="fav-cb" />
                     <label for="fav-cb1" class="fav-icon1">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img1" src="./img/films/black_panther.jpg" alt="Black Panther">
-                    <div class="card1">
-                        <div class="dir1"></div>
-                        <div class="qua1"></div>
-                        <div class="year1"></div>
+                    <div class="card card1">
+                        <div class="dir1">Director: Ryan Coogler</div>
+                        <div class="qua1">Calificación: > 12</div>
+                        <div class="year1">Año: 2018</div>
+                        <div cñass="sinop1">Acción</div>
                     </div>
                 </article>
-                <article class="film2">
-                    <input type="checkbox" id="fav-cb2" />
+                <article class="film film2">
+                    <input type="checkbox" id="fav-cb2" class="fav-cb" />
                     <label for="fav-cb2" class="fav-icon2">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img2" src="./img/films/cast_away.jpg" alt="Náufrago">
-                    <div class="card2">
-                        <div class="dir2"></div>
-                        <div class="qua2"></div>
-                        <div class="year2"></div>
+                    <div class="card card2">
+                        <div class="dir2">Director: Robert Zemeckis</div>
+                        <div class="qua2">Todos los públicos</div>
+                        <div class="year2">Año: 2000</div>
+                        <div cñass="sinop2">Drama</div>
                     </div>
                 </article>
-                <article class="film3">
-                    <input type="checkbox" id="fav-cb3" />
+                <article class="film film3">
+                    <input type="checkbox" id="fav-cb3" class="fav-cb" />
                     <label for="fav-cb3" class="fav-icon3">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img3" src="./img/films/doctor_strange.jpg" alt="Black Panther">
-                    <div class="card3">
-                        <div class="dir3"></div>
-                        <div class="qua3"></div>
-                        <div class="year3"></div>
+                    <div class="card card3">
+                        <div class="dir3">Director: Scott Derrickson</div>
+                        <div class="qua3">Calificación: > 7 años</div>
+                        <div class="year3">Año: 2016</div>
+                        <div cñass="sinop3">Ciencia ficción</div>
                     </div>
                 </article>
-                <article class="film4">
-                    <input type="checkbox" id="fav-cb4" />
+                <article class="film film4">
+                    <input type="checkbox" id="fav-cb4" class="fav-cb" />
                     <label for="fav-cb4" class="fav-icon4">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img4" src="./img/films/empire_strikes_back.jpg" alt="Náufrago">
-                    <div class="card4">
-                        <div class="dir4"></div>
-                        <div class="qua4"></div>
-                        <div class="year4"></div>
+                    <div class="card card4">
+                        <div class="dir4">Director: Irvin Kershner</div>
+                        <div class="qua4">Todos los públicos</div>
+                        <div class="year4">Año: 1980</div>
+                        <div cñass="sinop4">Ciencia ficción</div>
                     </div>
                 </article>
-                <article class="film5">
-                    <input type="checkbox" id="fav-cb5" />
+                <article class="film film5">
+                    <input type="checkbox" id="fav-cb5" class="fav-cb" />
                     <label for="fav-cb5" class="fav-icon5">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img5" src="./img/films/hobbit.jpg" alt="Black Panther">
-                    <div class="card5">
-                        <div class="dir5"></div>
-                        <div class="qua5"></div>
-                        <div class="year5"></div>
+                    <div class="card card5">
+                        <div class="dir5">Director: Peter Jackson</div>
+                        <div class="qua5">Calificación: > 7 años</div>
+                        <div class="year5">Año: 2012</div>
+                        <div cñass="sinop5">Aventuras</div>
                     </div>
                 </article>
-                <article class="film6">
-                    <input type="checkbox" id="fav-cb6" />
+                <article class="film film6">
+                    <input type="checkbox" id="fav-cb6" class="fav-cb" />
                     <label for="fav-cb6" class="fav-icon6">
-                        <!-- <i class="icon-video-camera"></i> -->
+                        <i class="icon-svg"></i>
                     </label>
                     <img class="img6" src="./img/films/irobot.jpg" alt="Náufrago">
-                    <div class="card6">
-                        <div class="dir6"></div>
-                        <div class="qua6"></div>
-                        <div class="year6"></div>
+                    <div class="card card6">
+                        <div class="dir6">Director: Alex Proyas</div>
+                        <div class="qua6">Calificación: > 13 años</div>
+                        <div class="year6">Año: 2004</div>
+                        <div cñass="sinop6">Acción</div>
                     </div>
                 </article>
+                <div>
+                    <input type="button" id="next-film1" />
+                    <label for="next-film1" class="next-icon1">
+                        <i class="icon-circle-left"></i>
+
+                </div>
             </div>
         </section>
-        <section id="listfilms2" class="listfilms2">
+        <section id="listfilms2" class="section listfilms2">
 
         </section>
-        <section id="listfilms2" class="listfilms2">
+        <section id="listfilms3" class="section listfilms3">
 
         </section>
     </main>

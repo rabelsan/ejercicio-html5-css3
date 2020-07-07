@@ -12,7 +12,7 @@
     font-family: Roboto-Bold; 
     font-size: x-large;
     text-align: center;
-    width: calc(100vh-var(--navbar-height););
+    width: calc(100vh-var(--navbar-height));
     line-height: var(--navbar-height);
     color: red;
     text-shadow: 1px 1px 2px #000000; /*, -1px 1px 1px #000000;*/
@@ -66,12 +66,6 @@
     text-decoration: none;
     color:white;
 }
-
-/* .navbar-item {
-  border-bottom-color: white;
-  border-bottom-width: thin;
-  border-bottom-style: solid;
-}*/
 
 .navbar-item > a:hover {
   display: block;

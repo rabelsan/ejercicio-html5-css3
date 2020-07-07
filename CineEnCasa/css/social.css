@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?jw0u3w');
-  src:  url('../fonts/icomoon/icomoon.eot?jw0u3w#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?jw0u3w') format('truetype'),
-    url('../fonts/icommon/icomoon.woff?jw0u3w') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?jw0u3w#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?3y3ht2');
+  src:  url('fonts/icomoon/icomoon.eot?3y3ht2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?3y3ht2') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?3y3ht2') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?3y3ht2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,9 +31,18 @@
 .icon-search:before {
   content: "\e986";
 }
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
 .icon-whatsapp:before {
   content: "\ea93";
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-svg:before {
+  content: "\eae9";
 }

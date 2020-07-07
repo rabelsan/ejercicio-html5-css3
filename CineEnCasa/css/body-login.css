@@ -2,12 +2,12 @@ body {
     background-color: var(--dark-color);
 }
 
-main {
-    /* background: var(--dark-color); */
+.main {
     background: url('../img/bg-cinema.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: top center;   
+    background-position: top center;
+    max-width: 100%;
 }
 
 .main-login {
@@ -16,7 +16,6 @@ main {
     grid-template-rows: auto;
     justify-content: center;
     align-content: center; 
-    
     column-gap: 5px; 
     row-gap: 5px;
     padding: 5em 1.5em;
