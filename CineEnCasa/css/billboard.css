@@ -2,7 +2,7 @@ body {
     background: var(--background-color);
     /* background-size: cover; 
     background-repeat: no-repeat;  */
-    background-position: top center;
+    background-position: center;
 }
 
 .main {
@@ -28,18 +28,16 @@ body {
 
 .list {
     display: grid;
-    grid-template-columns: 25px repeat(3,150px) 25px;
-    grid-template-areas: "next film1 film2 film3 prev";
+    grid-template-columns: repeat(3,150px);
+    grid-template-areas: "film1 film2 film3";
     justify-content: center;
     align-content: center;
-    gap: 5px;
+    justify-items: center;
+    gap: 0px;
     border: none; 
-    overflow-x: scroll;
+    overflow-x: scroll; 
 }
 
-#next-lf1 {
-    grid-area: next-icon1;
-}
 
 .film1 {
     grid-area: film1;
@@ -65,11 +63,8 @@ body {
     display: none;
 }
 
-#prev-lf1 {
-    grid-area: prev-icon1;
-}
-
-.btnext, .btprev {
+.film .fav-cb,
+.cbnext {
     display:none;
 }
 
@@ -80,15 +75,8 @@ body {
     background-position: center;
 }
 
-.next i, .prev i {
-    width: var(--navbar-height);
-    height: var(--navbar-height);
+.next-icon i {
     color: white;
-}
-
-.film .fav-cb {
-    display: none;
-    
 }
 
 .film .icon-svg {
@@ -99,27 +87,41 @@ body {
     background: black;
 }
 
-#fav-cb1:checked + .fav-icon1 .icon-svg, 
-#fav-cb2:checked + .fav-icon2 .icon-svg, 
-#fav-cb3:checked + .fav-icon3 .icon-svg, 
-#fav-cb4:checked + .fav-icon4 .icon-svg, 
-#fav-cb5:checked + .fav-icon5 .icon-svg, 
-#fav-cb6:checked + .fav-icon6 .icon-svg {
+#fav-cb11:checked + .fav-icon11 .icon-svg, 
+#fav-cb12:checked + .fav-icon12 .icon-svg, 
+#fav-cb13:checked + .fav-icon13 .icon-svg, 
+#fav-cb14:checked + .fav-icon14 .icon-svg, 
+#fav-cb15:checked + .fav-icon15 .icon-svg, 
+#fav-cb16:checked + .fav-icon16 .icon-svg,
+#fav-cb21:checked + .fav-icon21 .icon-svg, 
+#fav-cb22:checked + .fav-icon22 .icon-svg, 
+#fav-cb23:checked + .fav-icon23 .icon-svg, 
+#fav-cb24:checked + .fav-icon24 .icon-svg, 
+#fav-cb25:checked + .fav-icon25 .icon-svg, 
+#fav-cb26:checked + .fav-icon26 .icon-svg,
+#fav-cb31:checked + .fav-icon31 .icon-svg, 
+#fav-cb32:checked + .fav-icon32 .icon-svg, 
+#fav-cb33:checked + .fav-icon33 .icon-svg, 
+#fav-cb34:checked + .fav-icon34 .icon-svg, 
+#fav-cb35:checked + .fav-icon35 .icon-svg, 
+#fav-cb36:checked + .fav-icon36 .icon-svg  {
     color: gold; 
 }
 
 .film .card {
-    display:none; 
+    display: none; 
+    /* opacity: 0; */
     position: relative;
-    top: -105px;
-    left: 5px;
-    height: 70px;
-    width: 140px;
+    top: -100px;
+    left: 3px;
+    width: 0%;
+    height: 0%; 
     font-size: small;
     margin-left: 2px;
     background: rgba(255,255,255,0.7);
     color: black;
     border-radius: 5%;
+    transition: width 0.3s ease-out 0s; 
 }
 
 .film1 .img1:hover + .card1,
@@ -128,7 +130,43 @@ body {
 .film4 .img4:hover + .card4,
 .film5 .img5:hover + .card5,
 .film6 .img6:hover + .card6 {
+    height: 90px;
+    width: 130px;
+    /* opacity: 1; */
     display: block;
+}
+
+.cbnext1:checked ~ .list1 .film1,
+.cbnext1:checked ~ .list1 .film2,
+.cbnext1:checked ~ .list1 .film3,
+.cbnext2:checked ~ .list2 .film1,
+.cbnext2:checked ~ .list2 .film2,
+.cbnext2:checked ~ .list2 .film3 ,
+.cbnext3:checked ~ .list3 .film1,
+.cbnext3:checked ~ .list3 .film2,
+.cbnext3:checked ~ .list3 .film3 {
+    display: none; 
+}
+
+.cbnext1:checked ~ .list1 .film4,
+.cbnext2:checked ~ .list2 .film4,
+.cbnext3:checked ~ .list3 .film4 {
+    display: block;
+    grid-area: film1;
+}
+
+.cbnext1:checked ~ .list1 .film5,
+.cbnext2:checked ~ .list2 .film5,
+.cbnext3:checked ~ .list3 .film5 {
+    display: block;
+    grid-area: film2;
+}    
+
+.cbnext1:checked ~ .list1 .film6,
+.cbnext2:checked ~ .list2 .film6,
+.cbnext3:checked ~ .list3 .film6  {
+    display: block;
+    grid-area: film3;
 }
 
 @media (min-width: 768px) {
@@ -145,14 +183,26 @@ body {
     }
 
     .film .card {
-        top: -125px;
+        top: -120px;
         left: 3px;
         height: 95px;
         width: 165px;
         font-size: medium;
     }
+
+    .film1 .img1:hover + .card1,
+    .film2 .img2:hover + .card2,
+    .film3 .img3:hover + .card3,
+    .film4 .img4:hover + .card4,
+    .film5 .img5:hover + .card5,
+    .film6 .img6:hover + .card6 {
+        display: block; 
+        height: 105px;
+        width: 155px;
+        opacity: 1;
+    }
     
     .list {
-        grid-template-columns: repeat(6,175px);
+        grid-template-columns: repeat(3,175px);
     }    
 }
