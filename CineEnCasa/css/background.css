@@ -1,0 +1,16 @@
+body {
+    background: var(--background-color-mob);
+    background-size: auto; 
+    /* background-repeat: no-repeat;   */
+    background-position: 100%;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background: var(--background-color-768);
+        background-size: auto; 
+        /* background-repeat: no-repeat;   */
+        background-position: 100%;
+    }
+}    

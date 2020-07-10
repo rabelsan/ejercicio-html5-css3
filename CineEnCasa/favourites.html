@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEnCasa | Cine sin salir de casa</title>
+    <base href="./index.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/favourites.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <nav id="navbar-films" class="navbar">
+        <div class="brand">CineEnCasa</div>
+        <input type="checkbox" id="popcorn-checkbox" />
+        <label for="popcorn-checkbox" class="popcorn-icon">
+            <i class="icon-video-camera"></i>
+        </label>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="#novedades">Novedades</a>
+                </div>
+            </li>
+            <li class="navbar-item">
+                <a href="http://localhost:3000/favourites.html#navbar-films" target="_parent">Favoritos</a>
+            </li>
+            <li class="navbar-item">
+                <a href="http://localhost:3000/billboard.html#navbar-films">Películas</a>
+            </li>
+            <li class="navbar-item search">
+                <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
+                <form action="./lookup.html" method="get" target="_self" name="search-form" id="search-form">
+                    <input type="textbox" required name="searchText" id="search-textbox" />
+                    <button for="search-texbox" type="submit" class="search-button">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+            </li>
+            <li class="navbar-item logout">
+                <a href="http://localhost:3000/">Cerrar sesión</a>
+            </li>
+        </ul>
+
+    </nav>
+    <header class="tittle">
+        <h1>
+            <span>Mis favoritos</span>
+        </h1>
+    </header>
+    <main class="main">
+        <section id="listfilms1" class="section listfilms1">
+            <div class="list">
+                <article class="film film1">
+                    <div class="image">
+                        <label for="img1" class="fav-icon">
+                            <i class="icon-svg"></i>
+                        </label>
+                        <img class="img1" src="./img/films/apocalypse_now.jpg" alt="Apocalipsis now">
+                    </div>
+                    <div class="card card1">
+                        <div class="dir">Director: Francis Ford Coppola</div>
+                        <div class="qua">Calificación: > 18 años</div>
+                        <div class="year">Año: 1979</div>
+                        <div class="sinop">El capitán Willard es enviado a Vietnam a un lugar de la jungla donde deberá
+                            localizar y matar al coronel Kurtz (Marlon Brando), un ex boina verde que ha organizado su
+                            propio ejército y se deja adorar por los nativos. A medida que se adentra en la jungla en su
+                            viaje por el río, Willard se ve afectado fuertemente por los poderes de la naturaleza, por
+                            diversos conflictos bélicos, y por las infecciones y enfermedades. Sus compañeros se
+                            encuentran bajo el efecto de las drogas o sus propios miedos.
+                        </div>
+                    </div>
+                </article>
+                <article class="film film2">
+                    <div class="image">
+                        <label for="img2" class="fav-icon">
+                            <i class="icon-svg"></i>
+                        </label>
+                        <img class="img2" src="./img/films/last_mohicans.jpg" alt="El último Mohicano">
+                    </div>
+                    <div class="card card">
+                        <div class="dir">Director: Michael Mann</div>
+                        <div class="qua">Calificación: > 13 años</div>
+                        <div class="year">Año: 1991</div>
+                        <div class="sinop">Sinopsis: En 1757, a orillas del río Hudson, franceses e ingleses luchan por
+                            el dominio de la región. Hawkeye - Ojo de halcón- (Daniel Day-Lewis) es un
+                            hombre blanco que fue adoptado por los indios mohicanos. Tras salvar de una emboscada de los
+                            hurones a Cora Munro (Madeleine Stowe) y a su hermana pequeña Alice, las
+                            acompaña hasta el fuerte inglés William Henry, que está sufriendo el
+                            asedio de los franceses y los hurones.</div>
+                    </div>
+                </article>
+                <article class="film film3">
+                    <div class="image">
+                        <label for="img3" class="fav-icon">
+                            <i class="icon-svg"></i>
+                        </label>
+                        <img class="img3" src="./img/films/lunes_sol.jpg" alt="Los Lunes al sol">
+                    </div>
+                    <div class="card card3">
+                        <div class="dir">Director: Fernando León de Aranoa</div>
+                        <div class="qua">Calificación: > 13 años</div>
+                        <div class="year">Año: 2001</div>
+                        <div class="sinop">Sinopsis: En una ciudad costera del norte de España, a la que el desarrollo
+                            industrial ha hecho crecer desaforadamente, un grupo de hombres recorren cada día sus
+                            empinadas calles, buscando salidas de emergencia. Son funambulistas de fin de mes, sin red y
+                            sin público, sin aplausos al final; viven en la cuerda floja del trabajo precario y
+                            sobreviven gracias a sus pequeñas alegrías y rutinas.</div>
+                    </div>
+                </article>
+                <article class="film film4">
+                    <div class="image">
+                        <label for="img4" class="fav-icon">
+                            <i class="icon-svg"></i>
+                        </label>
+                        <img class="img4" src="./img/films/empire_strikes_back.jpg" alt="El imperio contraataca">
+                    </div>
+                    <div class="card card4">
+                        <div class="dir">Director: Irvin Kershner</div>
+                        <div class="qua">Todos los públicos</div>
+                        <div class="year">Año: 1980</div>
+                        <div class="sinop">Sinopsis: La película se sitúa tres años después de la destrucción de la
+                            estación espacial de combate conocida como la Estrella de la muerte, destrucción acaecida al
+                            final del episodio anterior, Una Nueva Esperanza, estrenada en el año 1977. En El Imperio
+                            contraataca Luke Skywalker, Han Solo, Leia Organa y el resto de la Alianza Rebelde son
+                            perseguidos por Darth Vader y las fuerzas de élite del Imperio Galáctico. En este episodio
+                            se desarrolla la historia de amor entre Han y Leia, mientras que Luke aprende más sobre los
+                            caminos de la Fuerza de la mano del maestro Yoda.</div>
+                    </div>
+                </article>
+                <article class="film film5">
+                    <div class="image">
+                        <label for="img5" class="fav-icon">
+                            <i class="icon-svg"></i>
+                        </label>
+                        <img class="img5" src="./img/films/puente_espias.jpg" alt="El puente de los espías">
+                    </div>
+                    <div class="card card5">
+                        <div class="dir">Director: Steven Spielberg</div>
+                        <div class="qua">Calificación: > 12 años</div>
+                        <div class="year">Año: 2015</div>
+                        <div class="sinop">Sinopsis: James Donovan (Tom Hanks), un abogado de Brooklyn (Nueva York) se
+                            ve inesperadamente involucrado en la Guerra Fría entre su país y la URSS cuando se encarga
+                            de defender a Rudolf Abel, detenido en los Estados Unidos y acusado de espiar para los
+                            rusos.
+                            Donovan incluso rechazará cooperar con la CIA cuando la Agencia intenta que viole la
+                            confidencialidad de comunicaciones entre abogado y su cliente.
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>

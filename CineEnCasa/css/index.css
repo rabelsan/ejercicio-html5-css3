@@ -22,7 +22,7 @@ body {
 }
 
 .advantages, .login {
-    background-color: rgb(252, 252, 107);
+    background-color: rgb(238, 238, 135);
     border-radius: 10px;
 }
 
@@ -41,6 +41,10 @@ form input[type='email'],
 form input[type='password'] {
     width: 95%;
     font-size: 1em;
+}
+
+.login-data .remember {
+    font-size: 15px;
 }
   
 input[type='submit'] {

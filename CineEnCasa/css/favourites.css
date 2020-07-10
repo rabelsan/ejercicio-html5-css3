@@ -1,0 +1,100 @@
+.main {
+    position: absolute;
+    top: calc(var(--navbar-height)*2);
+    left: 0;
+}
+
+.section {
+    padding: 10px;
+}
+
+.tittle {
+    display: block;
+    justify-items: center;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    height: var(--navbar-height);
+    margin-left: 10px;
+}
+
+.tittle h1 {    
+    font-size: 25px;
+    color: white;
+}
+
+.film1, .film2, .film3, 
+.film4, .film5, .film6 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    border: none; 
+    overflow: hidden; 
+    padding: 4px;
+}
+
+.film img {
+    grid-area: image;
+    width: var(--width-img-small);
+    height: var(--height-img-small);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image .icon-svg {
+    position: relative;
+    top: calc(var(--height-img-small) * (-1) + 25px); 
+    left: calc(var(--width-img-small));
+    color: yellow;
+    background: black;
+}
+
+.film .card {
+    grid-area: card;
+    width: calc(var(--width-img-small)*2.95); 
+    height: var(--height-img-small);
+    background: rgba(255,255,255,0.1);
+    color: white;
+    margin: 0px;
+    padding-left: 4px;
+}
+
+.dir, .qua, .year, .sinop {
+    font-family: Roboto-regular;
+    font-size: small;
+    padding: 1px;
+}
+
+@media (min-width: 768px) {
+   
+    .tittle h1 {    
+        font-size: 30px;
+    }
+
+    .film img {
+        width: var(--width-img-big);
+        height: var(--height-img-big);
+    }  
+
+    .image .icon-svg {
+        position: relative;
+        top: calc(var(--height-img-big) * (-1) + 25px); 
+        left: calc(var(--width-img-big));
+        color: yellow;
+        background: black;
+    }
+
+    .film .card {
+        width: calc(var(--width-img-big)*2.5);
+        height: var(--height-img-big);
+        padding-left: 5px; 
+    }
+
+    .dir, .qua, .year, .sinop {
+        font-family: Roboto-Bold;
+        padding: 6px;
+    }
+   
+}

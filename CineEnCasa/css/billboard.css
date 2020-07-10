@@ -1,10 +1,3 @@
-body {
-    background: var(--background-color);
-    background-size: auto; 
-    /* background-repeat: no-repeat;   */
-    background-position: 100%;
-}
-
 .main {
     position: absolute;
     top: calc(var(--navbar-height)*2);
@@ -18,9 +11,9 @@ body {
 .tittle {
     display: block;
     justify-items: center;
-    position: absolute;
-    top: var(--navbar-height);
-    left: 0;
+    position: absolute; 
+    top: var(--navbar-height); 
+    left: 0; 
     height: var(--navbar-height);
     margin-left: 10px;
 }
@@ -32,43 +25,42 @@ body {
 
 .list1 {
     display: grid;
-    grid-template-columns: 50px repeat(3,var(--width-img-small));
-    /* grid-template-rows: var(--height-img-small); */
-    grid-template-areas: "nav film1 film2 film3";
+    grid-template-columns: 30px repeat(4,var(--width-img-small));
+    grid-template-areas: "nav film1 film2 film3 film4";
     justify-content: center;
     align-content: center;
     justify-items: center;
-    position: absolute;
-    top: calc(var(--navbar-height));
-    gap: 0px;
+    position: absolute; 
+    top: calc(var(--navbar-height)); 
+    gap: 3px;
     border: none; 
     overflow-x: scroll; 
 }
 
 .list2 {
     display: grid;
-    grid-template-columns: 50px repeat(3,var(--width-img-small));
-    grid-template-areas: "nav film1 film2 film3";
+    grid-template-columns: 30px repeat(4,var(--width-img-small));
+    grid-template-areas: "nav film1 film2 film3 film4";
     justify-content: center;
     align-content: center;
     justify-items: center;
-    position: absolute;
-    top: calc(var(--navbar-height)*2 + var(--height-nav-small)); 
-    gap: 0px;
+    position: absolute; 
+    top: calc(var(--navbar-height)*2 + var(--height-nav-small));  
+    gap: 3px;
     border: none; 
     overflow-x: scroll; 
 }
 
 .list3 {
     display: grid;
-    grid-template-columns: 50px repeat(3,var(--width-img-small));
-    grid-template-areas: "nav film1 film2 film3";
+    grid-template-columns: 30px repeat(4,var(--width-img-small));
+    grid-template-areas: "nav film1 film2 film3 film4";
     justify-content: center;
     align-content: center;
     justify-items: center;
-    position: absolute;
-    top: calc(var(--navbar-height)*3 + var(--height-nav-small)*2);
-    gap: 0px;
+    position: absolute; 
+    top: calc(var(--navbar-height)*3 + var(--height-nav-small)*2); 
+    gap: 3px;
     border: none; 
     overflow-x: scroll; 
 } 
@@ -94,17 +86,11 @@ body {
 }
 
 .film4 {
-    display: none;
+    grid-area: film4;
 }
 
-.film5 {
-    display: none;
-}
-
-.film6 {
-    display: none;
-}
-
+.film5, .film6,
+.film7, .film8, 
 .film .fav-cb,
 .cbnext {
     display:none;
@@ -120,7 +106,7 @@ body {
 .film .icon-svg {
     position: relative;
     top: 25px; 
-    left: 105px;
+    left: calc(var(--width-img-small) - 25px);
     color: red;
     background: black;
 }
@@ -131,18 +117,24 @@ body {
 #fav-cb14:checked + .fav-icon14 .icon-svg, 
 #fav-cb15:checked + .fav-icon15 .icon-svg, 
 #fav-cb16:checked + .fav-icon16 .icon-svg,
+#fav-cb17:checked + .fav-icon17 .icon-svg,
+#fav-cb18:checked + .fav-icon18 .icon-svg,
 #fav-cb21:checked + .fav-icon21 .icon-svg, 
 #fav-cb22:checked + .fav-icon22 .icon-svg, 
 #fav-cb23:checked + .fav-icon23 .icon-svg, 
 #fav-cb24:checked + .fav-icon24 .icon-svg, 
 #fav-cb25:checked + .fav-icon25 .icon-svg, 
 #fav-cb26:checked + .fav-icon26 .icon-svg,
+#fav-cb27:checked + .fav-icon27 .icon-svg,
+#fav-cb28:checked + .fav-icon28 .icon-svg,
 #fav-cb31:checked + .fav-icon31 .icon-svg, 
 #fav-cb32:checked + .fav-icon32 .icon-svg, 
 #fav-cb33:checked + .fav-icon33 .icon-svg, 
 #fav-cb34:checked + .fav-icon34 .icon-svg, 
 #fav-cb35:checked + .fav-icon35 .icon-svg, 
-#fav-cb36:checked + .fav-icon36 .icon-svg  {
+#fav-cb36:checked + .fav-icon36 .icon-svg,
+#fav-cb37:checked + .fav-icon37 .icon-svg,
+#fav-cb38:checked + .fav-icon38 .icon-svg  {
     color: gold; 
 }
 
@@ -150,7 +142,7 @@ body {
     display: none; 
     /* opacity: 0; */
     position: relative;
-    top: -100px;
+    top: -110px;
     left: 2px;
     width: 0%;
     height: 0%; 
@@ -158,7 +150,7 @@ body {
     margin-left: 2px;
     background: rgba(255,255,255,0.7);
     color: black;
-    border-radius: 5%;
+    border-radius: 4%;
     transition: width 0.3s ease-out 0s; 
 }
 
@@ -167,48 +159,60 @@ body {
 .film3 .img3:hover + .card3,
 .film4 .img4:hover + .card4,
 .film5 .img5:hover + .card5,
-.film6 .img6:hover + .card6 {
+.film6 .img6:hover + .card6,
+.film7 .img7:hover + .card7,
+.film8 .img8:hover + .card8 {
     display: block;
     /* opacity: 1; */
-    height: 90px;
-    width: 120px;
+    height: 100px;
+    width: calc(var(--width-img-small) - 10px);
 }
 
 .cbnext1:checked ~ .film1,
 .cbnext1:checked ~ .film2,
 .cbnext1:checked ~ .film3,
+.cbnext3:checked ~ .film4,
 .cbnext2:checked ~ .film1,
 .cbnext2:checked ~ .film2,
-.cbnext2:checked ~ .film3 ,
+.cbnext2:checked ~ .film3,
+.cbnext3:checked ~ .film4,
 .cbnext3:checked ~ .film1,
 .cbnext3:checked ~ .film2,
-.cbnext3:checked ~ .film3 {
-    display: none; 
-}
-
-.cbnext1:checked ~ .film4,
-.cbnext2:checked ~ .film4,
+.cbnext3:checked ~ .film3,
 .cbnext3:checked ~ .film4 {
-    display: block;
-    grid-area: film1;
+    display: none; 
 }
 
 .cbnext1:checked ~ .film5,
 .cbnext2:checked ~ .film5,
 .cbnext3:checked ~ .film5 {
     display: block;
-    grid-area: film2;
-}    
+    grid-area: film1;
+}
 
 .cbnext1:checked ~ .film6,
 .cbnext2:checked ~ .film6,
-.cbnext3:checked ~ .film6  {
+.cbnext3:checked ~ .film6 {
+    display: block;
+    grid-area: film2;
+}
+
+.cbnext1:checked ~ .film7,
+.cbnext2:checked ~ .film7,
+.cbnext3:checked ~ .film7 {
     display: block;
     grid-area: film3;
 }
+    
+.cbnext1:checked ~ .film8,
+.cbnext2:checked ~ .film8,
+.cbnext3:checked ~ .film8 {
+    display: block;
+    grid-area: film4;
+}
 
 @media (min-width: 768px) {
-   
+
     .film img {
         width: var(--width-img-big);
         height: var(--height-img-big);
@@ -216,7 +220,7 @@ body {
 
     .film .icon-svg {
         position: relative;
-        left: 150px;
+        left: calc(var(--width-img-big) - 20px);
     }
 
     .film .card {
@@ -232,14 +236,16 @@ body {
     .film3 .img3:hover + .card3,
     .film4 .img4:hover + .card4,
     .film5 .img5:hover + .card5,
-    .film6 .img6:hover + .card6 {
+    .film6 .img6:hover + .card6,
+    .film7 .img7:hover + .card7,
+    .film8 .img8:hover + .card8 {
         height: 112px;
-        width: 155px;
+        width: calc(var(--width-img-big) - 15px);
         opacity: 1;
     }
     
     .list {
-        grid-template-columns: 50px repeat(3,var(--width-img-big));
+        grid-template-columns: 50px repeat(4,var(--width-img-big));
     } 
     
     .list2 {
@@ -249,4 +255,5 @@ body {
     .list3 {
         top: calc(var(--navbar-height)*3 + var(--height-nav-big)*2);
     }
+
 }

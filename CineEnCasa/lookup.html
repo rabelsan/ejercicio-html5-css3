@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEnCasa | Cine sin salir de casa</title>
+    <base href="./index.html">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/lookup.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <nav id="navbar-films" class="navbar">
+        <div class="brand">CineEnCasa</div>
+        <input type="checkbox" id="popcorn-checkbox" />
+        <label for="popcorn-checkbox" class="popcorn-icon">
+            <i class="icon-video-camera"></i>
+        </label>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="#novedades">Novedades</a>
+                </div>
+            </li>
+            <li class="navbar-item">
+                <a href="http://localhost:3000/favourites.html#navbar-films" target="_parent">Favoritos</a>
+            </li>
+            <li class=" navbar-item">
+                <a href="http://localhost:3000/billboard.html#navbar-films" target="_parent">Películas</a>
+            </li>
+            <li class="navbar-item search">
+                <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
+                <form action="./lookup.html" method="get" target="_self" name="search-form" id="search-form">
+                    <input type="textbox" required name="searchText" id="search-textbox" />
+                    <button for="search-texbox" type="submit" class="search-button">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+            </li>
+            <li class="navbar-item logout">
+                <a href="http://localhost:3000/">Cerrar sesión</a>
+            </li>
+        </ul>
+
+    </nav>
+    <header class="tittle">
+        <h1>
+            <span>Resultados búsqueda</span>
+        </h1>
+    </header>
+    <main class="main">
+        <section id="listfilms1" class="section listfilms1">
+            <div class="list">
+                <article class="film film1">
+                    <div class="image">
+                        <img class="img1" src="./img/films/kong.jpg" alt="Kong: La Isla Calvera">
+                    </div>
+                    <div class="card card1">
+                        <div class="dir">Director: Jordan Vogt-Roberts</div>
+                        <div class="qua">Calificación: > 12 años</div>
+                        <div class="year">Año: 2017</div>
+                        <div class="sinop">Sinopsis: En los años 70, un variopinto grupo de exploradores y soldados es
+                            reclutado
+                            para viajar a una misteriosa isla del Pacífico. Entre ellos están el capitán James Conrad
+                            (Tom Hiddleston), el teniente coronel Packard (Samuel L. Jackson) y una fotoperiodista (Brie
+                            Larson). Pero al adentrarse en esta bella pero traicionera isla, los exploradores
+                            encontrarán algo absolutamente sorprendente.</div>
+                    </div>
+                </article>
+                <article class="film film2">
+                    <div class="image">
+                        <img class="img2" src="./img/films/last_mohicans.jpg" alt="El último Mohicano">
+                    </div>
+                    <div class="card card">
+                        <div class="dir">Director: Michael Mann</div>
+                        <div class="qua">Calificación: > 13 años</div>
+                        <div class="year">Año: 1991</div>
+                        <div class="sinop">Sinopsis: En 1757, a orillas del río Hudson, franceses e ingleses luchan por
+                            el dominio de la región. Hawkeye - Ojo de halcón- (Daniel Day-Lewis) es un
+                            hombre blanco que fue adoptado por los indios mohicanos. Tras salvar de una emboscada de los
+                            hurones a Cora Munro (Madeleine Stowe) y a su hermana pequeña Alice, las
+                            acompaña hasta el fuerte inglés William Henry, que está sufriendo el
+                            asedio de los franceses y los hurones.</div>
+                    </div>
+                </article>
+                <article class="film film3">
+                    <div class="image">
+                        <img class="img3" src="./img/films/lunes_sol.jpg" alt="Los Lunes al sol">
+                    </div>
+                    <div class="card card3">
+                        <div class="dir">Director: Fernando León de Aranoa</div>
+                        <div class="qua">Calificación: > 13 años</div>
+                        <div class="year">Año: 2001</div>
+                        <div class="sinop">Sinopsis: En una ciudad costera del norte de España, a la que el desarrollo
+                            industrial ha hecho crecer desaforadamente, un grupo de hombres recorren cada día sus
+                            empinadas calles, buscando salidas de emergencia. Son funambulistas de fin de mes, sin red y
+                            sin público, sin aplausos al final; viven en la cuerda floja del trabajo precario y
+                            sobreviven gracias a sus pequeñas alegrías y rutinas.</div>
+                    </div>
+                </article>
+                <article class="film film4">
+                    <div class="image">
+                        <img class="img4" src="./img/films/perfectos_desconocidos.jpg" alt="Perfectos desconocidos">
+                    </div>
+                    <div class="card card4">
+                        <div class="dir">Director: Álex de la Iglesia</div>
+                        <div class="qua">Calificación: > 12 años</div>
+                        <div class="year">Año: 2017</div>
+                        <div class="sinop">Sinopsis: En una cena entre cuatro parejas, que se conocen de toda la vida,
+                            se propone un juego que pondrá sobre la mesa sus peores secretos: leer en voz alta los
+                            mensajes, y atender públicamente las llamadas, que reciban en sus móviles durante la cena.
+                            Remake del exitoso film italiano "Perfetti sconosciuti" (2016), de Paolo Genovese.</div>
+                    </div>
+                </article>
+                <article class="film film5">
+                    <div class="image">
+                        <img class="img5" src="./img/films/puente_espias.jpg" alt="El puente de los espías">
+                    </div>
+                    <div class="card card5">
+                        <div class="dir">Director: Steven Spielberg</div>
+                        <div class="qua">Calificación: > 12 años</div>
+                        <div class="year">Año: 2015</div>
+                        <div class="sinop">Sinopsis: James Donovan (Tom Hanks), un abogado de Brooklyn (Nueva York) se
+                            ve inesperadamente involucrado en la Guerra Fría entre su país y la URSS cuando se encarga
+                            de defender a Rudolf Abel, detenido en los Estados Unidos y acusado de espiar para los
+                            rusos.
+                            Donovan incluso rechazará cooperar con la CIA cuando la Agencia intenta que viole la
+                            confidencialidad de comunicaciones entre abogado y su cliente.
+                        </div>
+                    </div>
+                </article>
+                <article class="film film6">
+                    <div class="image">
+                        <img class="img6" src="./img/films/que_baje_dios.jpg" alt="Que baje Dios">
+                    </div>
+                    <div class="card card6">
+                        <div class="dir">Director: Curro Velázquez</div>
+                        <div class="qua">Calificación: > 7 años</div>
+                        <div class="year">Año: 2018</div>
+                        <div class="sinop">Sinopsis: Narra la historia de un monasterio en quiebra, cuya única
+                            oportunidad de salvación está en ganar la “Champions Clerum”, un torneo de fútbol europeo
+                            sólo para religiosos. El problema es que en esa congregación no juega al fútbol "ni Dios", y
+                            este inesperado equipo necesitará algo más que la bendición del Arzobispo de la diócesis
+                            para salvar su casa.</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>
