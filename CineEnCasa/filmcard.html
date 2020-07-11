@@ -19,21 +19,20 @@
 <body>
     <nav id="navbar-films" class="navbar">
         <div class="brand">CineEnCasa</div>
-
         <input type="checkbox" id="popcorn-checkbox" />
         <label for="popcorn-checkbox" class="popcorn-icon">
             <i class="icon-video-camera"></i>
         </label>
         <ul class="navbar-list">
             <li class="navbar-item">
-                <a href="#novedades">Novedades</a>
+                <a href="./comingsoon.html#navbar-films" target="_self">Novedades</a>
                 </div>
             </li>
             <li class="navbar-item">
-                <a href="#favoritos">Favoritos</a>
+                <a href="./favourites.html#navbar-films" target="_self">Favoritos</a>
             </li>
             <li class="navbar-item">
-                <a href="./billboard.html#navbar-films">Películas</a>
+                <a href="./billboard.html#navbar-films" target="_self">Películas</a>
             </li>
             <li class="navbar-item search">
                 <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
@@ -59,7 +58,16 @@
                     </h1>
                 </header>
                 <article class="film film1">
-                    <img class="img img1" src="./img/films/black_panther.jpg" alt="Black Panther">
+                    <!-- <img class="img img1" src="./img/films/black_panther.jpg" alt="Black Panther"> -->
+                    <figure class="vdo vdo1">
+                        <video class="vdo" controls autoplay preload>
+                            <source src="./vdo/blackpth.mp4" type="video/mp4" alt="Trailer Black Panther">
+                            Tu navegador no soporta la etiqueta video
+                        </video>
+                        <figcaption>
+                            Black Panther trailer
+                        </figcaption>
+                    </figure>
                     <div class="casting casting1">
                         Reparto: Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman,
                         Angela

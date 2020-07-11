@@ -52,9 +52,13 @@
 }
 
 .dir, .qua, .year, .synop {
-    font-family: Roboto-regular;
+    font-family: Roboto-Light;;
     font-size: small;
     padding: 1px;
+}
+
+.dir {
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -69,14 +73,14 @@
     }  
 
     .film .card {
-        width: calc(var(--width-img-big)*2.5);
+        width: calc(var(--width-img-big)*3);
         height: var(--height-img-big);
         padding-left: 5px; 
     }
 
     .dir, .qua, .year, .synop {
-        font-family: Roboto-Bold;
+        font-family: Roboto-Light;
         padding: 6px;
     }
-   
+
 }

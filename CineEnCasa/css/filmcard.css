@@ -46,14 +46,23 @@
     background-position: center; 
 }
 
+.vdo {
+    grid-area: film;
+    width: var(--width-img-small);
+    height: var(--height-img-small); 
+    margin: 0;
+}
+
+figcaption {
+    font-family: light;
+    font-size: x-small;
+    color: white;
+}
+
 .casting {
     grid-area: casting;
     background: rgba(255,255,255,0.1);
     color: white;
-    font-family: Roboto-Light;
-    font-size: small;
-    padding: 4px;
-    overflow: scroll;
 }
 
 .synop {
@@ -61,10 +70,6 @@
     background: rgba(255,255,255,0.1);
     color: white;
     height: var(--height-img-small); 
-    font-family: Roboto-Light;
-    font-size: small;
-    padding: 4px; 
-    overflow: scroll; 
 }
 
 #proposal {
@@ -86,6 +91,7 @@
     font-family: Roboto-light;
     font-size: small;
     padding: 1px;
+    overflow: scroll;
 }
 
 @media (min-width: 768px) {
@@ -104,6 +110,11 @@
     }
 
     .synop {
+        height: var(--height-img-big); 
+    }
+
+    .vdo {
+        width: var(--width-img-big);
         height: var(--height-img-big); 
     }
    

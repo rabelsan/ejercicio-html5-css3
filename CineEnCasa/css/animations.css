@@ -1,0 +1,56 @@
+
+@keyframes rotateIn {
+    from {
+      transform: rotateZ(0);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: rotateZ(180deg);
+      opacity: 1;
+    }
+  
+    to {
+      transform: rotateZ(360deg);
+      opacity: 1;
+    }
+  }
+  
+  .rotateIn {
+    animation-name: rotateIn;
+    transform-origin: center;
+  }
+  
+  .animation1 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 100px);
+    border: solid 5px black;
+    animation: rotateIn 1s;
+    animation-iteration-count: 0.75;
+    opacity: 0;
+    z-index: 9999;
+
+    border-radius: 50%;
+    border-top: solid 5px red;
+    border-bottom: solid 5px red;
+  }
+
+  .animation2 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 50px);
+    border: solid 5px red;
+    animation: rotateIn 1s;
+    animation-iteration-count: 0.75;
+    opacity: 0;
+    z-index: 9999;
+
+    border-radius: 50%;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+  }

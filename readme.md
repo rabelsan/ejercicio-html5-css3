@@ -12,6 +12,8 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
 
 - No hay un apartado *Series* porque tendría exactamente el mismo formato que Películas y la idea era intentar implemetar nuevas funcionalidades
 
+- Para probar las animaciones he añadido una al cargar la opción *Películas*
+
 - La opción *Películas* permite:
 
     - Marcar una película como favorita al hacer click sobre la estrella roja
@@ -22,6 +24,7 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
 
     - Muestra sugerencias de otras películas
     - Sobre las películas sugeridas también se puede ir a sus detalles haciendo click sobre la imagen
+    - Para la película **Black Panther** he añadido un video en lugar de la imagen
 
 Ramón Beltrán Sánchez
 
