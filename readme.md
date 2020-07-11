@@ -12,5 +12,16 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
 
 - No hay un apartado *Series* porque tendría exactamente el mismo formato que Películas y la idea era intentar implemetar nuevas funcionalidades
 
+- La opción *Películas* permite:
+
+    - Marcar una película como favorita al hacer click sobre la estrella roja
+    - Visualizar detalles de la película al pasar sobre ella
+    - Ir a los detalles de la película pulsando click sobre la imagen
+
+- Detalles de la película
+
+    - Muestra sugerencias de otras películas
+    - Sobre las películas sugeridas también se puede ir a sus detalles haciendo click sobre la imagen
+
 Ramón Beltrán Sánchez
 

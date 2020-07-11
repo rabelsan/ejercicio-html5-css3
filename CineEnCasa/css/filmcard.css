@@ -1,23 +1,18 @@
 .main {
     position: absolute;
-    top: calc(var(--navbar-height)*3);
+    top: calc(var(--navbar-height)*1);
     left: 0;
 }
 
-.section {
-    padding: 10px;
-}
-
-.tittle {
+.filmcard {
     justify-items: center;
-    position: absolute; 
-    top: var(--navbar-height);
-    left: 0;
-    height: var(--navbar-height);
-    margin-left: 10px;
+    height: var(--navbar-height); 
+    font-size: x-large;
+    margin-top: calc(var(--navbar-height) * 1.5);
+    margin-bottom: calc(var(--navbar-height) * 0.5);
 }
 
-.listfilms  {
+.section  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -32,6 +27,8 @@
     grid-template-columns: repeat(2,minmax(100px,175px));
     grid-template-areas: repeat(auto-fit,auto);
     grid-template-areas: "film synop synop" "film synop synop" "casting casting casting";
+    min-width: calc(100vw * 0.5);
+    max-width: calc(100vw * 0.95);
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -56,6 +53,7 @@
     font-family: Roboto-Light;
     font-size: small;
     padding: 4px;
+    overflow: scroll;
 }
 
 .synop {
@@ -92,16 +90,21 @@
 
 @media (min-width: 768px) {
    
-    .casting {
-       /*  grid-area: casting;
-        width: calc(var(--width-img-big)*2.95); 
-        height: var(--height-img-big); */
+    .filmcard {
+        font-size: xx-large;
     }
-    
-    .imgp {
+
+    .film {
+        max-width: calc(var(--width-img-big) * 4);
+    }
+
+    .img, .imgp {
         width: var(--width-img-big); 
         height: var(--height-img-big);
     }
-    
+
+    .synop {
+        height: var(--height-img-big); 
+    }
    
 }
