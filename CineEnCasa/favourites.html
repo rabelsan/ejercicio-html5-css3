@@ -29,14 +29,15 @@
                 </div>
             </li>
             <li class="navbar-item">
-                <a href="http://localhost:3000/favourites.html#navbar-films" target="_parent">Favoritos</a>
+                <a href="./favourites.html#navbar-films" target="_self">Favoritos</a>
             </li>
             <li class="navbar-item">
-                <a href="http://localhost:3000/billboard.html#navbar-films">Películas</a>
+                <a href="./billboard.html#navbar-films" target="_self">Películas</a>
             </li>
             <li class="navbar-item search">
                 <!-- <a class="icon-search" href="#busqueda">Buscar</a> -->
-                <form action="./lookup.html" method="get" target="_self" name="search-form" id="search-form">
+                <form action="./lookup.html#navbar-films" method="get" target="_self" name="search-form"
+                    id="search-form">
                     <input type="textbox" required name="searchText" id="search-textbox" />
                     <button for="search-texbox" type="submit" class="search-button">
                         <i class="icon-search"></i>
@@ -44,7 +45,7 @@
                 </form>
             </li>
             <li class="navbar-item logout">
-                <a href="http://localhost:3000/">Cerrar sesión</a>
+                <a href="./index.html#navbar" target="_self">Cerrar sesión</a>
             </li>
         </ul>
 
@@ -82,18 +83,21 @@
                         <label for="img2" class="fav-icon">
                             <i class="icon-svg"></i>
                         </label>
-                        <img class="img2" src="./img/films/last_mohicans.jpg" alt="El último Mohicano">
+                        <img class="img2" src="./img/films/coco.jpg" alt="Coco">
                     </div>
                     <div class="card card">
-                        <div class="dir">Director: Michael Mann</div>
-                        <div class="qua">Calificación: > 13 años</div>
-                        <div class="year">Año: 1991</div>
-                        <div class="sinop">Sinopsis: En 1757, a orillas del río Hudson, franceses e ingleses luchan por
-                            el dominio de la región. Hawkeye - Ojo de halcón- (Daniel Day-Lewis) es un
-                            hombre blanco que fue adoptado por los indios mohicanos. Tras salvar de una emboscada de los
-                            hurones a Cora Munro (Madeleine Stowe) y a su hermana pequeña Alice, las
-                            acompaña hasta el fuerte inglés William Henry, que está sufriendo el
-                            asedio de los franceses y los hurones.</div>
+                        <div class="dir">Director: Bert Berry</div>
+                        <div class="qua">Todos los públicos</div>
+                        <div class="year">Año: 2017</div>
+                        <div class="sinop">Sinopsis: La trama de Coco tiene lugar en el pueblo ficticio de Santa
+                            Cecilia, ambientado en México, donde habita Miguel Rivera, un niño de doce años de edad que
+                            aspira a convertirse en músico al igual que su fallecido ídolo Ernesto de la Cruz, un
+                            popular cantante. Sus anhelos se ven obstaculizados por la restricción impuesta
+                            por su familia hacia la música, específicamente desde que su tatarabuela, Imelda, supuso que
+                            su esposo le había abandonado en aras de la búsqueda de una carrera musical. A pesar de lo
+                            anterior, Miguel crea su propia guitarra y aprende a tocarla en secreto a partir de vídeos
+                            de su ídolo.
+                        </div>
                     </div>
                 </article>
                 <article class="film film3">
