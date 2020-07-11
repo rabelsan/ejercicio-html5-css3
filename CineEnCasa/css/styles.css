@@ -32,10 +32,12 @@ body {
 
 h1 {
     font-family: Roboto-Black, Arial, Helvetica, sans-serif;
- }
+    color: white;
+}
   
 h2, h3, h4, h5, h6 {
     font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 @font-face {

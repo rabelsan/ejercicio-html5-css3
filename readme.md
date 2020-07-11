@@ -6,7 +6,7 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
 
 - Las opciones de *Menú* no salen de la pantalla principal para intentar simular que es necesario logearse primero
 
-- La opción *Salir* en el menú de pantalla grande, recarga la página principal para que tenga el efecto de que hace algo
+- La opción *Cerrar sesión* siempre vuelve al formulario de log-in
 
 - La opción *¿Has olivdado la contraseña?* de la ventana de registro llama a la página de **Error 404** para poder visualizarla
 

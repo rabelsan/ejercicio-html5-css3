@@ -1,0 +1,19 @@
+.main {
+    position: absolute;
+    top: calc(var(--navbar-height)*2);
+    left: 0;
+}
+
+.section {
+    padding: 0;
+}
+
+.tittle {
+    display: block;
+    justify-items: center;
+    position: absolute; 
+    top: var(--navbar-height); 
+    left: 0; 
+    height: var(--navbar-height);
+    margin-left: 10px;
+}

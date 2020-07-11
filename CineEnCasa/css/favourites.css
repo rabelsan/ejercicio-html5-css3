@@ -20,57 +20,64 @@
 
 .tittle h1 {    
     font-size: 25px;
-    color: white;
 }
 
 .film1, .film2, .film3, 
 .film4, .film5, .film6 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    min-width: fit-content;
-    border: none; 
-    overflow: hidden; 
-    padding: 4px;
-}
+    flex-wrap: wrap; 
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    align-content: center;
+ }
 
 .film img {
     grid-area: image;
     width: var(--width-img-small);
     height: var(--height-img-small);
-    background-size: cover;
-    background-position: center;
+   align-self: center;
 }
-
 
 .image .icon-svg {
     position: relative;
     top: calc(var(--height-img-small) * (-1) + 25px); 
-    left: calc(var(--width-img-small));
+    left: -30px;
     color: yellow;
     background: black;
 }
 
 .film .card {
     grid-area: card;
-    width: calc(var(--width-img-small)*2.95); 
+    width: calc(var(--width-img-small) * 2.85);    
     height: var(--height-img-small);
+    font-family: Roboto-Thin;
+    font-size: small;
     background: rgba(255,255,255,0.1);
     color: white;
     margin: 0px;
-    padding-left: 4px;
+    padding-left: 2px;
+    overflow-x: scroll;
+    padding: 1px;
 }
 
-.dir, .qua, .year, .sinop {
-    font-family: Roboto-regular;
-    font-size: small;
-    padding: 1px;
+.dir {
+    font-weight: bold;
+}
+
+.dir, .qua, .year, .synop {
+    padding: 3px;
 }
 
 @media (min-width: 768px) {
    
     .tittle h1 {    
         font-size: 30px;
+    }
+
+    .film1, .film2, .film3, 
+    .film4, .film5, .film6 {
+        max-width: calc(var(--width-img-big) * 4px);
     }
 
     .film img {
@@ -81,20 +88,18 @@
     .image .icon-svg {
         position: relative;
         top: calc(var(--height-img-big) * (-1) + 25px); 
-        left: calc(var(--width-img-big));
+        left: -30px;
         color: yellow;
         background: black;
     }
 
     .film .card {
-        width: calc(var(--width-img-big)*2.5);
+        width: calc(var(--width-img-big) * 3); 
         height: var(--height-img-big);
-        padding-left: 5px; 
+        padding-left: 2px; 
     }
-
-    .dir, .qua, .year, .sinop {
-        font-family: Roboto-Bold;
-        padding: 6px;
+     
+    .dir, .qua, .year, .synop {
+        padding: 5px;
     }
-   
 }
