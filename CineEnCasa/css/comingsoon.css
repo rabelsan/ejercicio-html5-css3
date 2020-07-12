@@ -1,45 +1,46 @@
 .main {
     position: absolute;
-    top: calc(var(--navbar-height)*2);
-    left: 0;
-}
-
-.section {
-    padding: 0;
-}
-
-.tittle {
-    display: block;
-    justify-items: center;
-    position: absolute; 
-    top: var(--navbar-height); 
-    left: 0; 
-    height: var(--navbar-height);
-    margin-left: 10px;
+    top: calc(var(--navbar-height) * 1);
+    left: 0;    
 }
 
 .section  {
     display: flex;
     flex-direction: column;
+    flex: 0 1 auto;
     flex-wrap: wrap;
-    min-width: fit-content;
+    max-width: var(--max-width);
     border: none; 
     overflow: scroll; 
-    padding: 4px;
+    padding: 0px;
+    margin: 0px;
+} 
+
+.section2  {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    background-color: black;
+    border: 10px; 
+    overflow: scroll; 
+    padding: 0px;
+    margin: 0px;
 } 
 
 .film {
     display: grid;
-    grid-template-columns: repeat(2,minmax(100px,175px));
+    grid-template-columns: var(--width-img-small) minmax(150px, 225px);
     grid-template-areas: repeat(auto-fit,auto);
-    grid-template-areas: "film synop synop" "film synop synop" "casting casting casting";
+    grid-template-areas: "film card card card" "premiere premiere timeleft timeleft";
     min-width: calc(100vw * 0.5);
     max-width: calc(100vw * 0.95);
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    gap: 5px; 
+    gap: 2px; 
     border: none; 
     overflow: hide; 
 }
@@ -48,17 +49,15 @@
     grid-area: film;
     width: var(--width-img-small);
     height: var(--height-img-small); 
-    background-size: cover;
-    background-position: center; 
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 2px;
 }
 
-.casting {
-    grid-area: casting;
-    overflow: scroll;
-}
-
-.synop {
-    grid-area: synop;
+.card {
+    grid-area: card;
     background: rgba(255,255,255,0.1);
     color: white;
     height: var(--height-img-small); 
@@ -68,18 +67,11 @@
     overflow: scroll; 
 }
 
-.casting .synopsis {
-    background: rgba(255,255,255,0.1);
-    color: white;  
-    font-family: Roboto-light;
-    font-size: small;
-    padding: 1px;
-}
-
 @media (min-width: 768px) {
  
     .film {
-        max-width: calc(var(--width-img-big) * 4);
+        grid-template-columns: var(--width-img-big) minmax(175px,275px); 
+        max-width: calc(var(--width-img-big) * 5);
     }
 
     .img {
@@ -87,7 +79,7 @@
         height: var(--height-img-big);
     }
 
-    .synop {
+    .card {
         height: var(--height-img-big); 
     }
 

@@ -1,6 +1,6 @@
 .main {
     position: absolute;
-    top: calc(var(--navbar-height)*2);
+    top: calc(var(--navbar-height) * 2);
     left: 0;
 }
 
