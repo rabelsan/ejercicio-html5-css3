@@ -24,7 +24,7 @@
 .film {
     display: grid;
     grid-template-columns: var(--width-img-small) minmax(150px, 225px);
-    grid-template-areas: repeat(auto-fit,auto);
+    grid-template-rows: repeat(auto-fit,auto);
     grid-template-areas: "film synop synop" "film synop synop" "casting casting casting";
     min-width: calc(100vw * 0.5);
     max-width: calc(100vw * 0.95);

@@ -30,8 +30,10 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
 
     - Muestra los próximos estrenos de la cartelera
     - Hay un formulario para suscribirse
+    - He incluido un control *input type date* para ver como funciona
+    - Tampoco he podido saber cómo implementar un contador de tiempo restante para el estreno
 
-- No he podido implementar a tiempo el Carrusel
+- No he podido implementar a tiempo el Carrusel porque a pesar de las pruebas que he hecho no conseguía que funcionara corrctamente así que no lo he incluido. Realmente ha sido muy laborioso porque es la primera página web que hago.
 
 Ramón Beltrán Sánchez
 
