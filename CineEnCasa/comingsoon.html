@@ -81,19 +81,20 @@
                     </div>
                 </div>
                 <div class="premiere">
-                    Fecha de estreno: 01/08/2020
+                    Fecha de estreno: <input type="date" id="datepre" value="2020-08-01" min="2020-08-01"
+                        max="2020-08-01">
                 </div>
                 <div class="timeleft">
-                    Quedan
+                    Quedan <label class=""></label>
                 </div>
             </article>
             <article class="film film2">
                 <img class="img img2" src="./img/films/pinocho.jpg" alt="Pinocho">
                 <div class="card card2">
                     <div class="tit tit1">
-                        <h2>Del revés</h2>
+                        <h2>Pinocho</h2>
                     </div>
-                    <div class="dir dir2">Director: </div>
+                    <div class="dir dir2">Director: Matteo Garrone</div>
                     <div class="gen gen2">Género: Fantástico. Aventuras. Drama.</div>
                     <div class="cas cas2">Reparto: Federico Ielapi, Roberto Benigni, Gigi Proietti, Rocco Papaleo,
                         Massimo Ceccherini, Marine Vacth, Paolo Graziosi, Marcello Fonte, Teco Celio, Davide Marotta,
@@ -105,7 +106,8 @@
                     </div>
                 </div>
                 <div class="premiere">
-                    Fecha de estreno: 04/09/2020
+                    Fecha de estreno: <input type="date" id="datepre" value="2020-09-04" min="2020-09-04"
+                        max="2020-09-04">
                 </div>
                 <div class="timeleft">
                     Quedan
@@ -115,12 +117,11 @@
             <!-- </div> -->
         </section>
         <section id="subscribe" class="section2 subscribe">
-            <h2>Subscríbete y no te pierdas las novedades</h2>
-            <form action="./comingsoon.html#navbar-films" method="get" target="_self" name="subscribe-form"
-                id="subscribe-form">
+            <h2>Suscríbete y no te pierdas las novedades</h2>
+            <form onsubmit="alert('Te has inscrito correctamente.')" name="subscribe-form" id="subscribe-form">
                 <div class="contact-data">
                     <!-- <label for="email">Correo electrónico</label> -->
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico" maxlength="60"
+                    <input type="email" id="email" name="email" required placeholder="Correo electrónico" maxlength="60"
                         size="25" />
                     <input type="submit" value="Enviar" /> </p>
                 </div>

@@ -94,25 +94,26 @@
 }
 
 .section2 h2 {
-    font-family: Roboto-Light;
+    font-family: Roboto-Regular;
     font-size: medium;
     color: black;
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.contact-data {
+    text-align: center;
 }
 
 form input[type='email'],
 form input[type='submit'] {
-    font-size: 1.5rem;
-    height: 1.5rem;
-    padding: 0px;
+    font-size: 1rem;
     border: 0px;
-    margin: 0px; 
+    padding: 4px;
 }
 
 form input[type='submit'] {
-    width: 5rem;
     background: red;
 }
 

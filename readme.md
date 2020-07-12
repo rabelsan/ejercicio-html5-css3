@@ -26,5 +26,12 @@ Simulación plataformas the streaming tipo **HBO** | **Netflix**
     - Sobre las películas sugeridas también se puede ir a sus detalles haciendo click sobre la imagen
     - Para la película **Black Panther** he añadido un video en lugar de la imagen
 
+- Opción *Novedades*
+
+    - Muestra los próximos estrenos de la cartelera
+    - Hay un formulario para suscribirse
+
+- No he podido implementar a tiempo el Carrusel
+
 Ramón Beltrán Sánchez
 
