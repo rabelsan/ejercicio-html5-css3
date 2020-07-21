@@ -1,0 +1,81 @@
+.main {
+    position: absolute;
+    top: calc(var(--navbar-height)*1);
+    left: 0;
+}
+
+.carrousel {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 300px 20px;
+    grid-template-areas: "film" "navigate";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: var(--max-width);
+    gap: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+figure {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background-color: red;
+}
+
+.img, .vdo {
+    width: 100vw;
+    height: 300px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}    
+
+ul li {
+    display: inline;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none; 
+}
+
+.selector {
+    grid-area: navigate;
+}
+
+#film1:target .icon-svg, #film2:target .icon-svg, #film3:target .icon-svg {
+    color: red;
+    transition: color 2s ease-in-out 0s;
+ /*   color: gray; */
+}
+
+#film1, #film2, #film3 {
+    display: none;
+}
+
+#film1 {
+    display: block;
+    grid-area: film;
+}
+
+#film1:target .img1 {
+    /* display: block; */
+    grid-area: film;
+}
+
+#film2:target {
+    display: block;
+    grid-area: film;
+}
+
+#film3:target {
+    display: block;
+    grid-area: film;
+}
